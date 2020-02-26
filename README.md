@@ -1,1 +1,4 @@
-# C.Sharp_Track_Lab2
+# DesignPatterns
+# Lab #2 - Structural Patterns
+# FullName: Androshchuk Maksym
+# Group: IP-81
