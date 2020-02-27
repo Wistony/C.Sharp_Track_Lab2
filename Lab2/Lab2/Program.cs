@@ -2,13 +2,11 @@
 
 namespace Lab2
 {
-    public class Program
+    public static class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
-            Human somePeople = new Human(19, 68, 183, Gender.Male, PhysActivity.VeryHigh);
-            KilocaloriesCalculator calculator = new KilocaloriesCalculator();
-            KilocaloriesCalculator.CalculateKCal(somePeople);
+            
         }
     }
 }
