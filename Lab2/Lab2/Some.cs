@@ -2,13 +2,14 @@ using System;
 
 namespace Lab2
 {
+    /*
     public enum BodyType
     {
         Ectomorph, //схильний до худорлявості
         Mesomorph, //спортивний і мускулистий від природи
         Endomorph  //схильний до набору зайвої ваги
-    }; 
-    public enum PhisActivity
+    }; */
+    public enum PhysActivity
     {
         Min = 1200,
         Low = 1375,
@@ -21,33 +22,30 @@ namespace Lab2
     {
         Female,
         Male
-    }
+    };
     
     public class Human
     {
-        public int Age { get; set; }
-        public float Weight { get; set; }
-        public float Height { get; set; }
-        public Gender Gender { get; set; }
-        public PhisActivity Activity { get; set; }
-        public BodyType Body { get; set; }
+        public int Age { get; private set; }
+        public float Weight { get; private set; }
+        public float Height { get; private set; }
+        public Gender Gender { get; private set; }
+        public PhysActivity Activity { get; private set; }
 
-        public Human(int age, float weight, float height, Gender gender, PhisActivity act, BodyType body )
+        public Human(int age, float weight, float height, Gender gender, PhysActivity act)
         {
             this.Age = age;
             this.Weight = weight;
             this.Height = height;
             this.Gender = gender;
             this.Activity = act;
-            this.Body = body;
         }
     }
-    
     public class KilocaloriesCalculator
     {
-        public void Calc(Human hum)
+        public static void CalculateKCal(Human hum)
         {
-            float bmr = 10 * hum.Weight + 6.25f * hum.Height - 5 * hum.Age;
+            float bmr = 10 * hum.Weight + 6.25f * hum.Height - 5 * hum.Age; //basal metabolic rate 
             
             if (hum.Gender == Gender.Female)
             {

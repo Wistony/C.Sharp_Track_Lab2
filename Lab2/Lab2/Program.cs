@@ -6,9 +6,9 @@ namespace Lab2
     {
         private static void Main(string[] args)
         {
-            Human somePeople = new Human(19, 68, 183, Gender.Male, PhisActivity.VeryHigh, BodyType.Ectomorph);
+            Human somePeople = new Human(19, 68, 183, Gender.Male, PhysActivity.VeryHigh);
             KilocaloriesCalculator calculator = new KilocaloriesCalculator();
-            calculator.Calc(somePeople);
+            KilocaloriesCalculator.CalculateKCal(somePeople);
         }
     }
 }
