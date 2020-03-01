@@ -2,9 +2,11 @@ namespace Lab2
 {
     public class ThinHuman : HumanDecorator
     {
-        ThinHuman(Human human) : base(human)
+        public ThinHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {
@@ -14,9 +16,11 @@ namespace Lab2
 
     public class LowFatHuman : HumanDecorator
     {
-        LowFatHuman(Human human) : base(human)
+        public LowFatHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {
@@ -26,9 +30,11 @@ namespace Lab2
     
     public class AverageFatHuman : HumanDecorator
     {
-        AverageFatHuman(Human human) : base(human)
+        public AverageFatHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {
@@ -38,9 +44,11 @@ namespace Lab2
     
     public class FatHuman : HumanDecorator
     {
-        FatHuman(Human human) : base(human)
+        public FatHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {

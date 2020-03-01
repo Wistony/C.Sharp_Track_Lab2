@@ -4,28 +4,28 @@ namespace Lab2
 
     public class FatPercentageCalculator
     {
-        private static float CalculateFatPercentage(Human human)
+        protected static float CalculateFatPercentage(Human human)
         {
-            float bmi = BmiCalculator.GetBmi(human);
+            var bmi = BmiCalculator.GetBmi(human);
             if (human is Male)
             {
-                return (1.2f * bmi) / (0.23f * human.Age) - 16.2f;
+                return (1.2f * bmi) + (0.23f * human.Age) - 16.2f;
             }
             else
             {
-                return (1.2f * bmi) / (0.23f * human.Age) - 5.4f;
+                return (1.2f * bmi) + (0.23f * human.Age) - 5.4f;
             }
         }
 
-        public static void GetFatPercantage(Human human)
+        public static void GetFatPercentage(Human human)
         {
-            float fatPercentage = CalculateFatPercentage(human);
+            var fatPercentage = CalculateFatPercentage(human);
             Console.WriteLine($"Your fat percentage is {fatPercentage}");
         }
 
         public static void AnalyseFatPercentage(Human human)
         {
-            float fatPercentage = CalculateFatPercentage(human);
+            var fatPercentage = CalculateFatPercentage(human);
 
             if (human is Male)
             {

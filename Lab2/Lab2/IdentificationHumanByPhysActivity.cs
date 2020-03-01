@@ -5,7 +5,9 @@ namespace Lab2
     {
         public VeryLightActivityHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
 
         public override float GetDailyKCal()
@@ -19,7 +21,9 @@ namespace Lab2
     {
         public LightActivityHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
 
         public override float GetDailyKCal()
@@ -33,7 +37,9 @@ namespace Lab2
     {
         public ModerateActivityHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {
@@ -46,7 +52,9 @@ namespace Lab2
     {
         public HeavyActivityHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {
@@ -59,7 +67,9 @@ namespace Lab2
     {
         public VeryHeavyActivityHuman(Human human) : base(human)
         {
-            
+            this.Age = human.Age;
+            this.Height = human.Height;
+            this.Weight = human.Weight;
         }
         public override float GetDailyKCal()
         {

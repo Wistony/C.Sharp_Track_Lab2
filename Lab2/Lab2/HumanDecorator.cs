@@ -1,11 +1,9 @@
-using System;
-
 namespace Lab2
 {
     public abstract class HumanDecorator : Human
     {
-        public Human Human;
-        public HumanDecorator(Human human)
+        protected readonly Human Human;
+        protected HumanDecorator(Human human)
         {
             this.Human = human;
         }

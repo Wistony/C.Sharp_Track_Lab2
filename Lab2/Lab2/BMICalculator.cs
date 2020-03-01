@@ -1,18 +1,16 @@
 namespace Lab2
 {
     using System;
-    using System.Security.Cryptography.X509Certificates;
 
     public static  class BmiCalculator   // body mass index 
     {
         public static float GetBmi(Human human)
         {
-            return human.Weight / (human.Height * human.Height / 10000);
+            return human.Weight / (human.Height * human.Height / 10000f);
         }
-
         public static void AnalyseBmi(Human human)
         {
-            float bmi = GetBmi(human);
+            var bmi = GetBmi(human);
 
             if (bmi <= 16)
             {
